@@ -45,7 +45,7 @@ def main():
     
     #National_Average = (10, 10, 10, 10)                      #Bar 2 - Actual
     ind = np.arange(R)                                       #Order of Bars 
-    width = 2.002.00                                             #Width of Bar 
+    width = 4                                             #Width of Bar 
     
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
 
