@@ -21,12 +21,28 @@ df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 #Test =  Printing out the first 5 rows of the dataframe
 #print (df.head())
 
+#Unique State Retrieval
+dataFrame = pd.DataFrame(df)
+Unique_State = (dataFrame["Region"].unique()) #Pulls State Abbreviation
+Unique_State_Count = (len(Unique_State)) #Count for all Inputs in Region column
+
+
+#Average Monthly by State
+
+#National Average baseline 
+National_Rows = (dataFrame.query("Region== 'National'"), ("Month== 'April_2022'"))
+
+# Attempt to pull out April 2022 National Rent Prices for baseline against all other information
+
+print(National_Rows.)
+
+
 def main(): 
-    R = 4
-    Average_Monthly_Rent = (20, 35, 30, 35)
-    National_Average = (25, 32, 34, 20)
-    ind = np.arange(R)
-    width = 0.45
+    R = 4                                                    #Inputs along x axis
+    Average_Monthly_Rent = (20, 35, 30, 35)                  #Bar 1 
+    National_Average = (25, 32, 34, 20)                      #Bar 2
+    ind = np.arange(R)                                       #Order of Bars 
+    width = 0.45                                             #Width of Bar 
     
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
 
@@ -34,13 +50,13 @@ def main():
     
     plt.ylabel("Average Monthly Rent (dollars)")
     plt.title("Average Rental Costs by State")
-    plt.xticks(ind, ("Q1", "Q2", "Q3", "Q4"))
+    plt.xticks(ind, ("1","2","3","4"))
     plt.yticks(np.arange(0, 81, 10))
     plt.legend((p1[0], p2[0]), ("AMR", "NMR"))
 
     # display the graph
-    # plt.show() # you can try this on a Python IDE with a GUI if you'd like
     plt.savefig("/home/student/mycode/FinalProject.png")
     
+
 if __name__ == "__main__":
     main()
