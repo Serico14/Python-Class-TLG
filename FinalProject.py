@@ -76,10 +76,10 @@ def main():
     ind = np.arange(R)                                                                                        #Order of Bars 
     width = 0.5                                                                                               #Width of Bar 
     
-    fig = plt.subplots(figsize = (26,18))
+    fig = plt.subplots(figsize = (12,8))
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
 
-    p2 = plt.bar(ind, National_Average, width, bottom= Average_Monthly_Rent)
+    p2 = plt.bar(ind, NAB, width, bottom= Average_Monthly_Rent)
     
     plt.ylabel("Average Monthly Rent (dollars)")
     plt.title("Average Rental Costs by State")
