@@ -82,7 +82,7 @@ def main():
     p2 = plt.bar(ind,0)
     p3 = plt.axhline(y = NAB, color = 'orange', linestyle = 'dashed')
     
-    
+    plt.tick_params(rotation=45) 
     plt.ylabel("Average Monthly Rent (USD)")
     plt.title("Average Rental Costs by State")
     plt.xticks(ind, ("WI","MO","MN","RI","IL","OH","MD","CA","NC","DC","PA","TX","MI","MA","CO","VA","NV","IN","FL","GA","AZ","TN","NY","NJ","WA","OR"))
