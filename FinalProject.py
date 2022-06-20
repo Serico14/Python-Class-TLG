@@ -79,7 +79,9 @@ def main():
     fig = plt.subplots(figsize = (12,8))
     
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
-    p2 = plt.bar(ind, NAB, width)
+    p2 = plt.bar(ind,0)
+    p3 = plt.axhline(y = NAB, color = 'orange', linestyle = 'dashed')
+    #p2 = plt.bar(ind, NAB, width)
     
     plt.ylabel("Average Monthly Rent (dollars)")
     plt.title("Average Rental Costs by State")
