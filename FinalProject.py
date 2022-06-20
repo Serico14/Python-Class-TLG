@@ -68,14 +68,13 @@ def main():
     
     Average_Monthly_Rent = (WI,MO,MN,RI,IL,OH,MD,CA,NC,DC,PA,TX,MI,MA,CO,VA,NV,IN,FL,GA,AZ,TN,NY,NJ,WA,OR) 
     National_Average = (NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB) 
-
     #Average_Monthly_Rent = (20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20) #AMR Test
     #National_Average = (10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10) #NA Test
     #National_Average = for _ in range(Unique_State_Count):
-    #    National_Average_Base
     
-    ind = np.arange(R)                                                                                      #Order of Bars 
-    width = 1.5                                                                                               #Width of Bar 
+    
+    ind = np.arange(R)                                                                                        #Order of Bars 
+    width = 1                                                                                               #Width of Bar 
     
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
 
