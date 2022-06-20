@@ -83,11 +83,17 @@ def main():
     p3 = plt.axhline(y = NAB, color = 'orange', linestyle = 'dashed')
     
     
-    plt.ylabel("Average Monthly Rent (dollars)")
+    plt.ylabel("Average Monthly Rent (USD)")
     plt.title("Average Rental Costs by State")
     plt.xticks(ind, ("WI","MO","MN","RI","IL","OH","MD","CA","NC","DC","PA","TX","MI","MA","CO","VA","NV","IN","FL","GA","AZ","TN","NY","NJ","WA","OR"))
     plt.yticks(np.arange(0, 4501, 500))
     plt.legend((p1[0], p2[0]), ("AMR", "National Montly Rate"))
+   
+    # Add annotation to bars - Fail unable to find proper additional mapping tool
+    #plots = barplot (x = 'xticks', y = 'yticks', data = 'Average_Montly_Rent')
+    #plots.annotate(format(bar.get_height(), '.2f'),(bar.get_x() + bar.get_width() / 2, 
+    #    bar.get_height()), ha='center', va='center',size=15, 
+    #    xytext=(0, 8), textcoords='offset points')
     
     # Display Graph
     plt.savefig("/home/student/mycode/FinalProject.png")
