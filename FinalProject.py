@@ -66,13 +66,14 @@ OR = int(dataFrame.iat[256,3])
 def main(): 
     R = Unique_State_Count                                                    #Inputs along x axis
     
-    Average_Monthly_Rent = (WI,MO,MN,RI,IL,OH,MD,CA,NC,DC,PA,TX,MI,MA,CO,VA,NV,IN,FL,GA,AZ,TN,NY,NJ,WA,OR) #Test
-    
-    #Average_Monthly_Rent = (20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20) #AMR Test
-    #National_Average = (10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10)     #NA Test
+    Average_Monthly_Rent = (WI,MO,MN,RI,IL,OH,MD,CA,NC,DC,PA,TX,MI,MA,CO,VA,NV,IN,FL,GA,AZ,TN,NY,NJ,WA,OR) 
     National_Average = (NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB,NAB) 
+
+    #Average_Monthly_Rent = (20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20) #AMR Test
+    #National_Average = (10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10) #NA Test
     #National_Average = for _ in range(Unique_State_Count):
     #    National_Average_Base
+    
     ind = np.arange(R)                                                                                      #Order of Bars 
     width = 1.5                                                                                               #Width of Bar 
     
@@ -83,10 +84,10 @@ def main():
     plt.ylabel("Average Monthly Rent (dollars)")
     plt.title("Average Rental Costs by State")
     plt.xticks(ind, ("WI","MO","MN","RI","IL","OH","MD","CA","NC","DC","PA","TX","MI","MA","CO","VA","NV","IN","FL","GA","AZ","TN","NY","NJ","WA","OR"))
-    plt.yticks(np.arange(0, 4500, 250))
+    plt.yticks(np.arange(0, 4500, 500))
     plt.legend((p1[0], p2[0]), ("AMR", "NMR"))
 
-    # display the graph
+    # Display Graph
     plt.savefig("/home/student/mycode/FinalProject.png")
     
 
