@@ -74,7 +74,7 @@ def main():
     #National_Average = for _ in range(Unique_State_Count):
     #    National_Average_Base
     ind = np.arange(R)                                                                                      #Order of Bars 
-    width = 11                                                                                               #Width of Bar 
+    width = 1.5                                                                                               #Width of Bar 
     
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
 
