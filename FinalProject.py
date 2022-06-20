@@ -81,14 +81,14 @@ def main():
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
     p2 = plt.bar(ind,0)
     p3 = plt.axhline(y = NAB, color = 'orange', linestyle = 'dashed')
-    #p2 = plt.bar(ind, NAB, width)
+    
     
     plt.ylabel("Average Monthly Rent (dollars)")
     plt.title("Average Rental Costs by State")
     plt.xticks(ind, ("WI","MO","MN","RI","IL","OH","MD","CA","NC","DC","PA","TX","MI","MA","CO","VA","NV","IN","FL","GA","AZ","TN","NY","NJ","WA","OR"))
-    plt.yticks(np.arange(0, 6000, 500))
-    plt.legend((p1[0], p2[0]), ("AMR", "NMR"))
-
+    plt.yticks(np.arange(0, 4501, 500))
+    plt.legend((p1[0], p2[0]), ("AMR", "National Montly Rate"))
+    
     # Display Graph
     plt.savefig("/home/student/mycode/FinalProject.png")
 
