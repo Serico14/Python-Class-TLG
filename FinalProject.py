@@ -74,7 +74,7 @@ def main():
     
     
     ind = np.arange(R)                                                                                        #Order of Bars 
-    width = 0.5                                                                                               #Width of Bar 
+    width = 1                                                                                               #Width of Bar 
     
     fig = plt.subplots(figsize = (12,8))
     
