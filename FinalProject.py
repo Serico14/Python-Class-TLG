@@ -74,7 +74,7 @@ def main():
     
     
     ind = np.arange(R)                                                                                        #Order of Bars 
-    width = 1                                                                                               #Width of Bar 
+    width = 0.75                                                                                               #Width of Bar 
     
     fig = plt.subplots(figsize = (30,22))
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
