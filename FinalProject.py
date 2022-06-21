@@ -76,11 +76,11 @@ def main():
     ind = np.arange(R)                                                                                        #Order of Bars 
     width = 0.5                                                                                               #Width of Bar 
     
-    fig,ax = plt.subplots(figsize = (12,8))  #'ax' added to test annotation
-    dataFrame.plot(ax=ax)  #line added to test annotating
+    fig = plt.subplots(figsize = (12,8))  #'ax' added to test annotation
+#   dataFrame.plot(ax=ax)  #line added to test annotating
 
-    style= dict(size=10, color= 'gray')  #line added to test annotating
-    ax.text(1,1654,"Test", **style)  #line added to test annotating
+#    style= dict(size=10, color= 'gray')  #line added to test annotating
+#    ax.text(1,1654,"Test", **style)  #line added to test annotating
 
     p1 = plt.bar(ind, Average_Monthly_Rent, width)
     p2 = plt.bar(ind,0)
