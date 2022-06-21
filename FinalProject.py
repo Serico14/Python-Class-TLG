@@ -94,7 +94,7 @@ def main():
     #plots.annotate(format(bar.get_height(), '.2f'),(bar.get_x() + bar.get_width() / 2, 
     #    bar.get_height()), ha='center', va='center',size=15, 
     #    xytext=(0, 8), textcoords='offset points')
-    
+   
     # Display Graph
     plt.savefig("/home/student/mycode/FinalProject.png")
 
